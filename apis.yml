@@ -1,23 +1,89 @@
 aid: igo-com-au
-name: IGO
-description: 'IGO is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+name: IGO Limited
+
+description: 'IGO Limited is an ASX 100 listed Western Australian mining company focused on discovering,
+  developing and delivering the critical minerals needed for clean energy and electrification. It owns
+  and operates the Nova nickel-copper-cobalt operation in the Fraser Range and holds a lithium joint venture
+  with Tianqi Lithium Corporation comprising a 51% stake in the Greenbushes Lithium Mine and the Kwinana
+  lithium hydroxide refinery. No public developer API, documentation or developer portal was found on
+  igo.com.au (surfaced via the australia-apidays-2026 harvest).'
+
 url: https://raw.githubusercontent.com/api-evangelist/igo-com-au/refs/heads/main/apis.yml
+
+image: https://igo.com.au/site/irmcustomizationfile/38/logo_crop_trans.png
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity verified from the company's own homepage (title "IGO Limited", meta description). The
+    site is a corporate/investor site with no developer API, docs, portal or pricing pages linked.
+  evidence:
+  - url: https://igo.com.au/
+    status: 200
+  - url: https://igo.com.au/site/utilities/privacy-policy
+    status: 200
+  - url: https://igo.com.au/site/utilities/privacy-and-disclaimer
+    status: 200
+  - url: https://igo.com.au/site/caring/contact-us-1
+    status: 200
+  - url: https://careers.igo.com.au/
+    status: 200
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Mining
+- Critical Minerals
+- Lithium
+- Nickel
+- Clean Energy
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/igo-com-au-hosts.yml
+- type: Vendors
+  url: vendors/igo-com-au-vendors.yml
+- type: DomainSecurity
+  url: security/igo-com-au-domain-security.yml
 - type: Website
   url: https://igo.com.au/
+- type: PrivacyPolicy
+  url: https://igo.com.au/site/utilities/privacy-policy
+- type: TermsOfService
+  url: https://igo.com.au/site/utilities/privacy-and-disclaimer
+- type: Support
+  url: https://igo.com.au/site/caring/contact-us-1
+- type: News
+  url: https://igo.com.au/site/investor-center/ASX-Announcements
+- type: Careers
+  url: https://careers.igo.com.au/
+- type: Leadership
+  url: https://igo.com.au/site/our-business/leadership
+
+apis: []
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

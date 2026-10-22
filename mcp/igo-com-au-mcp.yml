@@ -1,0 +1,22 @@
+name: IGO Limited MCP server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: none
+source: https://igo.com.au/
+description: >-
+  No official MCP server, hosted or local, was found for IGO Limited, an ASX-listed Western Australian
+  critical-minerals mining company. The provider has no public developer API or OpenAPI contract
+  either, so no candidate tool list could be derived.
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+evidence:
+- url: https://igo.com.au/.well-known/mcp.json
+  status: 404
+- url: https://igo.com.au/llms.txt
+  status: 404
+- note: Pre-flight contract discovery (2026-10-21) on igo.com.au and careers.igo.com.au found no OpenAPI,
+    AsyncAPI, GraphQL or MCP surfaces. A web search for an IGO Limited API or MCP server returned no matches.
+tools: []

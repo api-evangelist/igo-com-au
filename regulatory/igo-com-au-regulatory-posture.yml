@@ -1,0 +1,68 @@
+generated: '2026-10-21'
+method: searched
+source: https://igo.com.au/site/utilities/privacy-policy
+signals:
+  data_subject_request:
+    url: https://igo.com.au/site/utilities/privacy-policy
+    section: '12. YOUR RIGHTS AND CHOICES'
+    channel: Chief Legal Officer, IGO Limited, PO Box 496, South Perth, WA 6951 (or by email, address obfuscated on the page)
+    rights_named: [access, correction, opt-out of direct marketing]
+    escalation: Australian Privacy Commissioner
+    evidence:
+    - source: https://igo.com.au/site/utilities/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If you wish to access the personal information that IGO holds about you or you believe that personal information about you is inaccurate or outdated, or if you have any other queries about access and correction, please contact our Chief Legal Officer using the contact details set out at the end of this Privacy Policy.
+    - source: https://igo.com.au/site/utilities/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        IGO asks that as much detail as possible is provided with a request and notes that IGO may need to verify the identity of someone making a request.
+    note: >-
+      A request process under the Australian Privacy Act. The policy names access and correction rights
+      and a channel (the Chief Legal Officer). It gives no response period. It names no general deletion
+      or portability right; deletion is mentioned only for job applicants' profiles on the vacancy site.
+  subprocessors:
+    url: https://igo.com.au/site/utilities/privacy-policy
+    section: '10. DISCLOSURE OF YOUR PERSONAL INFORMATION'
+    evidence:
+    - source: https://igo.com.au/site/utilities/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        to third party services providers appointed by IGO, including our professional advisors, accountants, insurers, lawyers, auditors, contractors, website and data hosting providers, technology service providers, advertising partners and persons who perform services for us (in which case IGO takes reasonable steps to ensure such third parties keep your personal information confidential and do not use or disclose your personal information for any purpose other than providing those services to us)
+    note: >-
+      Third-party processors are disclosed only by category. No named subprocessor list was found on
+      the pages read.
+  data_residency:
+    url: https://igo.com.au/site/utilities/privacy-policy
+    section: '11. CROSS-BORDER DISCLOSURE OF PERSONAL INFORMATION'
+    evidence:
+    - source: https://igo.com.au/site/utilities/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        IGO is based in Australia, so your personal information will be processed in Australia. However, we may send your personal information to organisations or persons located overseas, for example where IGO engages external information technology service providers who store data overseas.
+    note: >-
+      Data is processed in Australia by default, with no residency guarantee: it may be sent overseas.
+      Safeguards are conditional (reasonable steps, equivalent protection, or consent). No countries are
+      named.
+  data_retention:
+    url: https://igo.com.au/site/utilities/privacy-policy
+    section: '8. SECURITY OF YOUR PERSONAL INFORMATION / 9. JOB APPLICANTS'
+    evidence:
+    - source: https://igo.com.au/site/utilities/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will only keep personal information for as long as is necessary for the purposes described in this policy or as otherwise required by law.
+    - source: https://igo.com.au/site/utilities/privacy-policy
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We will remove all documents that are uploaded to your account, including those containing personal information (such as resumes, Visas and licences), from your profile every twelve months.
+    note: >-
+      The general retention rule is purpose-bound and has no fixed period. Job applicants get concrete
+      periods: uploaded documents are removed every twelve months, and the account is deactivated
+      after two years.

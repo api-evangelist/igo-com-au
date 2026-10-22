@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/igo-com-au/integrations
+- https://zapier.com/apps/igo-limited/integrations
+- https://n8n.io/integrations/igo-com-au/
+- https://composio.dev/toolkits/igo-com-au
+- https://monid.ai/tools/igo-com-au
+checked:
+- https://zapier.com/apps/igo/integrations
+- https://n8n.io/integrations/igo
+- https://igo.com.au/
+- https://composio.dev/toolkits/igo-com-au
+- https://monid.ai/tools/igo-com-au
+- https://n8n.io/integrations/igo-com-au/
+- https://zapier.com/apps/igo-com-au/integrations
+- https://zapier.com/apps/igo-limited/integrations
+summary: No integration marketplace listing, partner/integrations page or contract was found for IGO Limited (a
+  mining company with no public API).
+marketplace_apps: []
+edges: []
+templates: []

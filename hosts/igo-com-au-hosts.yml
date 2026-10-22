@@ -1,0 +1,55 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 2
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - website
+hosts:
+- host: api.com.au
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.au
+  role: api
+  relation: other-domain
+- host: careers.igo.com.au
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Careers
+  serves: []
+  registrable_domain: igo.com.au
+  role: marketing
+  relation: own
+- host: igo.com.au
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - PrivacyPolicy
+  - TermsOfService
+  - Support
+  - News
+  - Leadership
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: igo.com.au
+  role: website
+  relation: own
